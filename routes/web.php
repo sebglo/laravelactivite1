@@ -21,3 +21,4 @@ Route::get('/', 'HomeController@index');
 Route::get('/article', 'HomeController@article');
 Route::get('/contact', 'HomeController@contact');
 Route::get('/home', 'HomeController@index');
+
