@@ -69,7 +69,7 @@
 <body>
     @extends('layouts/main')
     @section('content')
-    <h1>Home</h1>
+    <h1>article</h1>
     @endsection
     
 
