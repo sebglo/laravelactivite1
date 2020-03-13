@@ -449,6 +449,12 @@
             "facade",
             "flare",
             "reporting"
+        ],
+        "funding": [
+            {
+                "url": "https://www.patreon.com/spatie",
+                "type": "patreon"
+            }
         ]
     },
     {
@@ -757,6 +763,12 @@
             "cors",
             "crossdomain",
             "laravel"
+        ],
+        "funding": [
+            {
+                "url": "https://github.com/barryvdh",
+                "type": "github"
+            }
         ]
     },
     {
@@ -1150,17 +1162,17 @@
     },
     {
         "name": "laravel/framework",
-        "version": "v7.1.0",
-        "version_normalized": "7.1.0.0",
+        "version": "v7.1.1",
+        "version_normalized": "7.1.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/laravel/framework.git",
-            "reference": "59b97d2868ff42d11626e63c6773b41146b3eb9c"
+            "reference": "b0328b500dfff44e75af103d57d81cdee83e5ce9"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/laravel/framework/zipball/59b97d2868ff42d11626e63c6773b41146b3eb9c",
-            "reference": "59b97d2868ff42d11626e63c6773b41146b3eb9c",
+            "url": "https://api.github.com/repos/laravel/framework/zipball/b0328b500dfff44e75af103d57d81cdee83e5ce9",
+            "reference": "b0328b500dfff44e75af103d57d81cdee83e5ce9",
             "shasum": ""
         },
         "require": {
@@ -1267,7 +1279,7 @@
             "symfony/psr-http-message-bridge": "Required to use PSR-7 bridging features (^2.0).",
             "wildbit/swiftmailer-postmark": "Required to use Postmark mail driver (^3.0)."
         },
-        "time": "2020-03-10T14:07:01+00:00",
+        "time": "2020-03-12T13:06:49+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1441,6 +1453,20 @@
             "markdown",
             "md",
             "parser"
+        ],
+        "funding": [
+            {
+                "url": "https://github.com/colinodell",
+                "type": "github"
+            },
+            {
+                "url": "https://www.patreon.com/colinodell",
+                "type": "patreon"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/league%2fcommonmark",
+                "type": "tidelift"
+            }
         ]
     },
     {
@@ -1527,6 +1553,16 @@
             "s3",
             "sftp",
             "storage"
+        ],
+        "funding": [
+            {
+                "url": "https://github.com/frankdejonge",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/league/flysystem",
+                "type": "tidelift"
+            }
         ]
     },
     {
@@ -1799,6 +1835,16 @@
             "date",
             "datetime",
             "time"
+        ],
+        "funding": [
+            {
+                "url": "https://opencollective.com/Carbon",
+                "type": "open_collective"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/nesbot/carbon",
+                "type": "tidelift"
+            }
         ]
     },
     {
@@ -1925,6 +1971,20 @@
             "laravel-zero",
             "php",
             "symfony"
+        ],
+        "funding": [
+            {
+                "url": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=66BYDWAT92N6L",
+                "type": "custom"
+            },
+            {
+                "url": "https://github.com/nunomaduro",
+                "type": "github"
+            },
+            {
+                "url": "https://www.patreon.com/nunomaduro",
+                "type": "patreon"
+            }
         ]
     },
     {
@@ -3295,6 +3355,12 @@
             "highlight.js",
             "highlight.php",
             "syntax"
+        ],
+        "funding": [
+            {
+                "url": "https://github.com/allejo",
+                "type": "github"
+            }
         ]
     },
     {
@@ -4076,7 +4142,21 @@
             }
         ],
         "description": "Symfony Console Component",
-        "homepage": "https://symfony.com"
+        "homepage": "https://symfony.com",
+        "funding": [
+            {
+                "url": "https://symfony.com/sponsor",
+                "type": "custom"
+            },
+            {
+                "url": "https://github.com/fabpot",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                "type": "tidelift"
+            }
+        ]
     },
     {
         "name": "symfony/css-selector",
@@ -4188,7 +4268,21 @@
             }
         ],
         "description": "Symfony ErrorHandler Component",
-        "homepage": "https://symfony.com"
+        "homepage": "https://symfony.com",
+        "funding": [
+            {
+                "url": "https://symfony.com/sponsor",
+                "type": "custom"
+            },
+            {
+                "url": "https://github.com/fabpot",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                "type": "tidelift"
+            }
+        ]
     },
     {
         "name": "symfony/event-dispatcher",
@@ -4260,7 +4354,21 @@
             }
         ],
         "description": "Symfony EventDispatcher Component",
-        "homepage": "https://symfony.com"
+        "homepage": "https://symfony.com",
+        "funding": [
+            {
+                "url": "https://symfony.com/sponsor",
+                "type": "custom"
+            },
+            {
+                "url": "https://github.com/fabpot",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                "type": "tidelift"
+            }
+        ]
     },
     {
         "name": "symfony/event-dispatcher-contracts",
@@ -4371,7 +4479,21 @@
             }
         ],
         "description": "Symfony Finder Component",
-        "homepage": "https://symfony.com"
+        "homepage": "https://symfony.com",
+        "funding": [
+            {
+                "url": "https://symfony.com/sponsor",
+                "type": "custom"
+            },
+            {
+                "url": "https://github.com/fabpot",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                "type": "tidelift"
+            }
+        ]
     },
     {
         "name": "symfony/http-foundation",
@@ -4526,7 +4648,21 @@
             }
         ],
         "description": "Symfony HttpKernel Component",
-        "homepage": "https://symfony.com"
+        "homepage": "https://symfony.com",
+        "funding": [
+            {
+                "url": "https://symfony.com/sponsor",
+                "type": "custom"
+            },
+            {
+                "url": "https://github.com/fabpot",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                "type": "tidelift"
+            }
+        ]
     },
     {
         "name": "symfony/mime",
@@ -4590,6 +4726,20 @@
         "keywords": [
             "mime",
             "mime-type"
+        ],
+        "funding": [
+            {
+                "url": "https://symfony.com/sponsor",
+                "type": "custom"
+            },
+            {
+                "url": "https://github.com/fabpot",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                "type": "tidelift"
+            }
         ]
     },
     {
@@ -5082,6 +5232,20 @@
             "routing",
             "uri",
             "url"
+        ],
+        "funding": [
+            {
+                "url": "https://symfony.com/sponsor",
+                "type": "custom"
+            },
+            {
+                "url": "https://github.com/fabpot",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                "type": "tidelift"
+            }
         ]
     },
     {
@@ -5221,7 +5385,21 @@
             }
         ],
         "description": "Symfony Translation Component",
-        "homepage": "https://symfony.com"
+        "homepage": "https://symfony.com",
+        "funding": [
+            {
+                "url": "https://symfony.com/sponsor",
+                "type": "custom"
+            },
+            {
+                "url": "https://github.com/fabpot",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                "type": "tidelift"
+            }
+        ]
     },
     {
         "name": "symfony/translation-contracts",
@@ -5454,17 +5632,17 @@
     },
     {
         "name": "vlucas/phpdotenv",
-        "version": "v4.1.1",
-        "version_normalized": "4.1.1.0",
+        "version": "v4.1.2",
+        "version_normalized": "4.1.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/vlucas/phpdotenv.git",
-            "reference": "32bd5ca5a4170f88e27073353013d210a3354ae9"
+            "reference": "939dfda2d7267ac8fc53ac3d642b5de357554c39"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/32bd5ca5a4170f88e27073353013d210a3354ae9",
-            "reference": "32bd5ca5a4170f88e27073353013d210a3354ae9",
+            "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/939dfda2d7267ac8fc53ac3d642b5de357554c39",
+            "reference": "939dfda2d7267ac8fc53ac3d642b5de357554c39",
             "shasum": ""
         },
         "require": {
@@ -5480,7 +5658,7 @@
         "suggest": {
             "ext-filter": "Required to use the boolean validator."
         },
-        "time": "2020-03-01T23:56:01+00:00",
+        "time": "2020-03-12T13:44:15+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -5514,21 +5692,27 @@
             "dotenv",
             "env",
             "environment"
+        ],
+        "funding": [
+            {
+                "url": "https://tidelift.com/funding/github/packagist/vlucas/phpdotenv",
+                "type": "tidelift"
+            }
         ]
     },
     {
         "name": "voku/portable-ascii",
-        "version": "1.4.9",
-        "version_normalized": "1.4.9.0",
+        "version": "1.4.10",
+        "version_normalized": "1.4.10.0",
         "source": {
             "type": "git",
             "url": "https://github.com/voku/portable-ascii.git",
-            "reference": "9fd2b224c71448b5f84aef9d499a1428d79776a2"
+            "reference": "240e93829a5f985fab0984a6e55ae5e26b78a334"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/voku/portable-ascii/zipball/9fd2b224c71448b5f84aef9d499a1428d79776a2",
-            "reference": "9fd2b224c71448b5f84aef9d499a1428d79776a2",
+            "url": "https://api.github.com/repos/voku/portable-ascii/zipball/240e93829a5f985fab0984a6e55ae5e26b78a334",
+            "reference": "240e93829a5f985fab0984a6e55ae5e26b78a334",
             "shasum": ""
         },
         "require": {
@@ -5540,7 +5724,7 @@
         "suggest": {
             "ext-intl": "Use Intl for transliterator_transliterate() support"
         },
-        "time": "2020-03-06T02:47:42+00:00",
+        "time": "2020-03-13T01:23:26+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -5565,6 +5749,24 @@
             "ascii",
             "clean",
             "php"
+        ],
+        "funding": [
+            {
+                "url": "https://www.paypal.me/moelleken",
+                "type": "custom"
+            },
+            {
+                "url": "https://github.com/voku",
+                "type": "github"
+            },
+            {
+                "url": "https://www.patreon.com/voku",
+                "type": "patreon"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/voku/portable-ascii",
+                "type": "tidelift"
+            }
         ]
     },
     {

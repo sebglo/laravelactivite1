@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit3653e9fe7d2daf79be9c2f1b691d7345
+class ComposerStaticInit0924110a3a7c6c27657035ef27a9654e
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -1491,6 +1491,7 @@ class ComposerStaticInit3653e9fe7d2daf79be9c2f1b691d7345
         'Illuminate\\Console\\GeneratorCommand' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/GeneratorCommand.php',
         'Illuminate\\Console\\OutputStyle' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/OutputStyle.php',
         'Illuminate\\Console\\Parser' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/Parser.php',
+        'Illuminate\\Console\\Scheduling\\CacheAware' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/Scheduling/CacheAware.php',
         'Illuminate\\Console\\Scheduling\\CacheEventMutex' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/Scheduling/CacheEventMutex.php',
         'Illuminate\\Console\\Scheduling\\CacheSchedulingMutex' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/Scheduling/CacheSchedulingMutex.php',
         'Illuminate\\Console\\Scheduling\\CallbackEvent' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/Scheduling/CallbackEvent.php',
@@ -3364,6 +3365,7 @@ class ComposerStaticInit3653e9fe7d2daf79be9c2f1b691d7345
         'PhpParser\\Parser\\Tokens' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Parser/Tokens.php',
         'PhpParser\\PrettyPrinterAbstract' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/PrettyPrinterAbstract.php',
         'PhpParser\\PrettyPrinter\\Standard' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php',
+        'PostsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/PostsTableSeeder.php',
         'Prophecy\\Argument' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument.php',
         'Prophecy\\Argument\\ArgumentsWildcard' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument/ArgumentsWildcard.php',
         'Prophecy\\Argument\\Token\\AnyValueToken' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument/Token/AnyValueToken.php',
@@ -4568,10 +4570,10 @@ class ComposerStaticInit3653e9fe7d2daf79be9c2f1b691d7345
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit3653e9fe7d2daf79be9c2f1b691d7345::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit3653e9fe7d2daf79be9c2f1b691d7345::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit3653e9fe7d2daf79be9c2f1b691d7345::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit3653e9fe7d2daf79be9c2f1b691d7345::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit0924110a3a7c6c27657035ef27a9654e::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit0924110a3a7c6c27657035ef27a9654e::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit0924110a3a7c6c27657035ef27a9654e::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit0924110a3a7c6c27657035ef27a9654e::$classMap;
 
         }, null, ClassLoader::class);
     }

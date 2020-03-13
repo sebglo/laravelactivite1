@@ -16,23 +16,22 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
+       /*DB::table('users')->insert([
             'name' => Str::random(10),
             'email' => Str::random(10).'@gmail.com',
             'password' => Hash::make('password'),
         ]);
 
         DB::table('posts')->insert([
-            'user_id' => Str::random(10),
-            'post_date'
-            'post_content' => $faker->paragraph,
+            'user_id' => 1,
+            'post_content' => Str::random(10),
             'post_title' => Str::random(10),
             'post_status'=> Str::random(10),
-            'post_name'=> $faker->name,
+            'post_name'=> Str::random(10),
             'post_type'=> Str::random(10),
             'post_category'=> Str::random(10),
             
-        ]);
+        ]);*/
     }
 }
 
