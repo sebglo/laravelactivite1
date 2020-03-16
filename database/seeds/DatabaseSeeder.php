@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
 
         $this->call(UsersTableSeeder::class);
         $this->call(PostsTableSeeder::class);
+        $this->call(ContactsTableSeeder::class);
 
 
     //    DB::table('users')->insert([
