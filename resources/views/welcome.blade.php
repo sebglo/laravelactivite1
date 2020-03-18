@@ -74,7 +74,7 @@
         
         <ul>
             @foreach ( $posts as $post )
-            <h3>{{ $post->post_name }}</h3>
+            <h3><a href="article">{{ $post->post_title }}</a></h3>
             <li>{{ $post->post_content }}</li>
             <li>{{ $post->post_date }}</li>
             @endforeach

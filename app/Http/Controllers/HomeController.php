@@ -38,7 +38,8 @@ class HomeController extends Controller
         //------------- fin de ne fonctionne pas----------------
 
         
-        //permet de prendre toutes les donnees pour les envoyer a la vue 
+        //permet d'afficher les trois dernier article trier par date 
+        //pour les envoyer a la vue 
         $posts = \App\Post::limit(3)->orderBy('post_date', 'DESC')->get();
         return view('welcome',array('posts' => $posts));
     }

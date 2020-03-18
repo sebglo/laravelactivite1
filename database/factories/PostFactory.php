@@ -9,13 +9,13 @@ use Illuminate\Support\Str;
 $factory->define(Post::class, function (Faker $faker) {
 
     return [
-        'user_id' => 1,
+        'user_id' => factory(\App\User::class),
         'post_content' => $faker->paragraph,
-        'post_title' => $faker->title,
+        'post_title' => $faker->sentence,
         'post_status'=> Str::random(10),
-        'post_name'=> $faker->name,
+        //'post_name'=> $faker->name,
         'post_type'=> Str::random(10),
-        'post_category'=> $faker->name,
+        'post_category'=> Str::random(10),
         'post_date'=> $faker->date,
     ];
 });
