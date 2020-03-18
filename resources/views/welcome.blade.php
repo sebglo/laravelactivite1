@@ -71,13 +71,19 @@
     @section('content')
     <h1>Home</h1>
     <ul>
-@foreach ( $posts as $post )
-
-  <li>{{ $post->post_title }}</li>
-  <li>{{ $post->post_content }}</li>
-
-@endforeach
-</ul>
+        
+        <ul>
+            @foreach ( $posts as $post )
+            <h3>{{ $post->post_name }}</h3>
+            <li>{{ $post->post_content }}</li>
+            <li>{{ $post->post_date }}</li>
+            @endforeach
+        </ul>
+        
+    
+    
+    </ul>
+   
     @endsection
 
     
