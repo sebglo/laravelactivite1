@@ -68,13 +68,13 @@
 
 <body>
     @extends('layouts/main')
-    @section('content')
+    @section('header')
     <h1>Home</h1>
     <ul>
         
         <ul>
             @foreach ( $posts as $post )
-            <h3><a href="article">{{ $post->post_title }}</a></h3>
+            <h3><a href="articles/{{ $post->post_title }}">{{ $post->post_title }}</a></h3>
             <li>{{ $post->post_content }}</li>
             <li>{{ $post->post_date }}</li>
             @endforeach

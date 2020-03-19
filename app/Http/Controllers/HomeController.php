@@ -10,16 +10,12 @@ class HomeController extends Controller
 {
     //
     function index()
-    {   
+    {    
         //permet de prendre toutes les donnees pour les envoyer a la vue 
-        //$post = \App\Post::all(); //get all posts
-        //return view('welcome',array('posts' => $post));
+        //$posts = \App\Post::all(); //get all posts
+        //return view('welcome',array('posts' => $posts));
 
-         //permet de prendre toutes les donnees pour les envoyer a la vue 
-         //$posts = \App\Post::all(); //get all posts
-         //return view('welcome',array('posts' => $posts));
-
-         //permet de prendre les donnees concernant l'id 1
+        //permet de prendre les donnees concernant l'id 1
         //$test = \App\Post::find(1); //trouver le post avec l’id 1
         //return view('welcome',['test'=>$test]);
 
@@ -44,14 +40,8 @@ class HomeController extends Controller
         return view('welcome',array('posts' => $posts));
     }
 
-    function article()
-    {
-        return view('article');
-    }
+    
 
-    function contact()
-    {
-        return view('contact');
-    }
+    
     
 }

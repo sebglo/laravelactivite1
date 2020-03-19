@@ -68,8 +68,17 @@
 
 <body>
     @extends('layouts/main')
-    @section('content')
-    <h1>article</h1>
+    @section('header')
+    <h1>articles</h1>
+    <ul>
+            @foreach ( $posts as $post )
+            <h3><a href="articles/{{ $post->post_title }}">{{ $post->post_title }}</a></h3>
+            <li>{{ $post->post_content }}</li>
+            <li>{{ $post->post_date }}</li>
+            @endforeach
+    </ul>
+   
+    
     @endsection
     
 

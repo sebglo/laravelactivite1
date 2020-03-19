@@ -69,8 +69,16 @@
 <body>
     @extends('layouts/main')
     @section('header')
-    <h1>contact</h1>
-
+    <h1>article seul</h1>
+    <ul>
+            <h3><a href="../articles">retours aux articles</a></h3>
+            <h3>{{ $post->post_title }}</a></h3>
+            <li>{{ $post->post_content }}</li>
+            <li>{{ $post->post_date }}</li>
+            <li>{{ $post->author->name }}</li>
+            
+    </ul>
+   
     
     @endsection
     

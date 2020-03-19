@@ -14,7 +14,7 @@
         <ul class="menu">
           <li class="menu-text">Blog</li>
           <li><a href="home">Home</a></li>
-          <li><a href="article">Article</a></li>
+          <li><a href="articles">Articles</a></li>
           <li><a href="contact">Contact</a></li>
         </ul>
       </div>
@@ -24,11 +24,11 @@
     <div class="callout large primary">
       <div class="row column text-center">
         <h1>mon blog</h1>
-        <h2 class="subheader">Such a Simple Blog Layout</h2>
+        <h2 class="subheader"> Un Simple Blog </h2>
       </div>
     </div>
 
-    @yield('content')
+    @yield('header')
     
 
 

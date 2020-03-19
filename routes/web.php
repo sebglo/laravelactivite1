@@ -18,8 +18,9 @@ use Illuminate\Support\Facades\Route;
 });*/
 
 Route::get('/', 'HomeController@index');
-Route::get('/article', 'HomeController@article');
-Route::get('/contact', 'HomeController@contact');
+Route::get('/articles', 'PostController@articles');
+Route::get('/contact', 'ContactController@contact');
 Route::get('/home', 'HomeController@index');
-
+Route::get('/articles/{post_title}', 'PostController@show');
+//Route::get('/article', 'PostController@article');
 
