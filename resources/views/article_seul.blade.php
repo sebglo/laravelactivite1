@@ -71,7 +71,6 @@
     @section('header')
     <h1>article seul</h1>
     <ul>
-            <h3><a href="../articles">retours aux articles</a></h3>
             <h3>{{ $post->post_title }}</a></h3>
             <li>{{ $post->post_content }}</li>
             <li>{{ $post->post_date }}</li>

@@ -18,9 +18,13 @@ use Illuminate\Support\Facades\Route;
 });*/
 
 Route::get('/', 'HomeController@index');
-Route::get('/articles', 'PostController@articles');
-Route::get('/contact', 'ContactController@contact');
 Route::get('/home', 'HomeController@index');
+
+Route::get('/articles', 'PostController@articles');
 Route::get('/articles/{post_title}', 'PostController@show');
-//Route::get('/article', 'PostController@article');
+
+Route::get('/contact', 'ContactController@contact');
+Route::post('/contact','ContactController@store');
+
+
 

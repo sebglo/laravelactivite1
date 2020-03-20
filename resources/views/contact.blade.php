@@ -70,10 +70,29 @@
     @extends('layouts/main')
     @section('header')
     <h1>contact</h1>
+    <h1>Créer un nouveau projet</h1>
+    <form method="POST" action="/contact">
+    @csrf
+        <div>
+            <input type="text" name="name" placeholder="nom">
+        </div>
+        <div>
+            <input type="email" name="email" placeholder="email" />
+        </div>
+        <div>
+            <textarea name="message" placeholder="message"></textarea>
+        </div>
+        <div>
+            <textarea name="date" placeholder="date"></textarea>
+        </div>
+        <div>
+            <button type="submit">Créer le projet</button>
+        </div>
+    </form>
 
-    
+
     @endsection
-    
+
 
 </body>
 
