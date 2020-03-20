@@ -8,10 +8,10 @@ use App\Contact;
 class ContactController extends Controller
 {
     //
-    function contact()
+    /*function contact()
     {
         return view('contact');
-    }
+    }*/
 
 
     public function store()
@@ -27,5 +27,16 @@ class ContactController extends Controller
         
         return redirect('/contact'); // méthode pour rediriger vers une autre url (en get par défaut)
 
+    }
+
+    function contact()
+    {
+        //permet de prendre toutes les donnees pour les envoyer a la vue 
+         $posts = \App\Contact::all(); //get all posts
+         return view('/contact',array('posts' => $posts));
+        
+        //$posts = \App\Post::limit(3)->orderBy('post_date', 'DESC')->get();
+        //return view('articles',array('posts' => $posts));
+        //return view('articles');
     }
 }

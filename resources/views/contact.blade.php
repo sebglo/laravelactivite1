@@ -72,7 +72,7 @@
     <h1>contact</h1>
     <h1>Créer un nouveau projet</h1>
     <form method="POST" action="/contact">
-    @csrf
+        @csrf
         <div>
             <input type="text" name="name" placeholder="nom">
         </div>
@@ -89,8 +89,14 @@
             <button type="submit">Créer le projet</button>
         </div>
     </form>
-
-
+    <ul>
+        @foreach ( $posts as $post )
+        <h3>{{ $post->contact_name }}</a></h3>
+        <li>{{ $post->contact_email }}</li>
+        <li>{{ $post->contact_message }}</li>
+        <li>{{ $post->contact_date }}</li>
+        @endforeach
+    </ul>
     @endsection
 
 
