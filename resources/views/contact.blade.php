@@ -71,24 +71,41 @@
     @section('header')
     <h1>contact</h1>
     <h1>Créer un nouveau projet</h1>
+    @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+    @endif
     <form method="POST" action="/contact">
         @csrf
         <div>
-            <input type="text" name="name" placeholder="nom">
+            <input type="text" name="name" placeholder="nom" class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}" value="{{ old('name') }}" />
+            {!! $errors->first('name', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div>
-            <input type="email" name="email" placeholder="email" />
+            <input type="email" name="email" placeholder="email" class="form-control {{ $errors->has('email') ? 'is-invalid' : '' }}" value="{{ old('email') }}" />
+            {!! $errors->first('email', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div>
-            <textarea name="message" placeholder="message"></textarea>
+            <textarea name="message" placeholder="message" class="form-control {{ $errors->has('message') ? 'is-invalid' : '' }}" value="{{ old('message') }}"></textarea>
+            {!! $errors->first('message', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div>
-            <textarea name="date" placeholder="date"></textarea>
+            <input type="date" name="date" placeholder="date" class="form-control {{ $errors->has('date') ? 'is-invalid' : '' }}" value="{{ old('date') }}"></textarea>
+            {!! $errors->first('date', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div>
-            <button type="submit">Créer le projet</button>
+            <button type="submit">Envoyer</button>
         </div>
     </form>
+    <br>
+    <br>
+
+
     <ul>
         @foreach ( $posts as $post )
         <h3>{{ $post->contact_name }}</a></h3>
