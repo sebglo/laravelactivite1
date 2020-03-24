@@ -83,20 +83,45 @@
     <form method="POST" action="/contact">
         @csrf
         <div>
-            <input type="text" name="name" placeholder="nom" class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}" value="{{ old('name') }}" />
-            {!! $errors->first('name', '<div class="invalid-feedback">:message</div>') !!}
+            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nom') }}</label>
+
+            <input type="text" name="name" placeholder="nom" class="form-control @error('name') is-invalid @enderror" value="{{ old('name') }}" required autocomplete="name" autofocus>
+            @error('name')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+            @enderror
+
         </div>
         <div>
-            <input type="email" name="email" placeholder="email" class="form-control {{ $errors->has('email') ? 'is-invalid' : '' }}" value="{{ old('email') }}" />
-            {!! $errors->first('email', '<div class="invalid-feedback">:message</div>') !!}
+
+            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('email') }}</label>
+            
+            <input type="email" name="email" placeholder="email" class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}" required autocomplete="email" autofocus>
+            @error('email')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+            @enderror
+            
         </div>
         <div>
-            <textarea name="message" placeholder="message" class="form-control {{ $errors->has('message') ? 'is-invalid' : '' }}" value="{{ old('message') }}"></textarea>
-            {!! $errors->first('message', '<div class="invalid-feedback">:message</div>') !!}
+            <label for="message" class="col-md-4 col-form-label text-md-right">{{ __('message') }}</label>
+            <textarea name="message" placeholder="message" class="form-control @error('message') is-invalid @enderror" value="{{ old('message') }}" required autocomplete="message" autofocus></textarea>
+            @error('message')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+            @enderror
         </div>
         <div>
-            <input type="date" name="date" placeholder="date" class="form-control {{ $errors->has('date') ? 'is-invalid' : '' }}" value="{{ old('date') }}"></textarea>
-            {!! $errors->first('date', '<div class="invalid-feedback">:message</div>') !!}
+            <label for="date" class="col-md-4 col-form-label text-md-right">{{ __('date') }}</label>
+            <input type="date" name="date" placeholder="date" class="form-control @error('date') is-invalid @enderror" value="{{ old('date') }}" required autocomplete="date" autofocus></textarea>
+            @error('date')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+            @enderror
         </div>
         <div>
             <button type="submit">Envoyer</button>
