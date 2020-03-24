@@ -63,6 +63,9 @@
         .m-b-md {
             margin-bottom: 30px;
         }
+        .red{
+            color:red;
+        }
     </style>
 </head>
 
@@ -87,8 +90,8 @@
 
             <input type="text" name="name" placeholder="nom" class="form-control @error('name') is-invalid @enderror" value="{{ old('name') }}" required autocomplete="name" autofocus>
             @error('name')
-            <span class="invalid-feedback" role="alert">
-                <strong>{{ $message }}</strong>
+            <span class="invalid-feedback" class="red" role="alert">
+                <strong class="red">{{ $message }}</strong>
             </span>
             @enderror
 

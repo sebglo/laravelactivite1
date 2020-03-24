@@ -71,16 +71,49 @@
     @section('header')
     <h1>article seul</h1>
     <ul>
-            <h3>{{ $post->post_title }}</a></h3>
-            <li>{{ $post->post_content }}</li>
-            <li>{{ $post->post_date }}</li>
-            <li>{{ $post->author->name }}</li>
-            
+        <h3>{{ $post->post_title }}</a></h3>
+        <li>{{ $post->post_content }}</li>
+        <li>{{ $post->post_date }}</li>
+        <li>{{ $post->author->name }}</li>
+
     </ul>
-   
-    
+    <ul>
+            @foreach ( $comms as $comm )
+            <h3>{{ $comm->com_name }}</a></h3>
+            <li>{{ $comm->com_message }}</li>
+            @endforeach
+    </ul>
+    <form method="POST" action="/articles/{{ $post->post_title }}">
+        @csrf
+
+        <div>
+            <label for="message" class="col-md-4 col-form-label text-md-right">{{ __('message') }}</label>
+            <textarea name="message" placeholder="message" class="form-control @error('message') is-invalid @enderror" value="{{ old('message') }}" required autocomplete="message" autofocus></textarea>
+            @error('message')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+            @enderror
+        </div>
+        <div>
+            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nom') }}</label>
+
+            <input type="text" name="name" placeholder="nom" class="form-control @error('name') is-invalid @enderror" value="{{ old('name') }}" required autocomplete="name" autofocus>
+            @error('name')
+            <span class="invalid-feedback" class="red" role="alert">
+                <strong class="red">{{ $message }}</strong>
+            </span>
+            @enderror
+
+        </div>
+        <div>
+            <button type="submit">Envoyer</button>
+        </div>
+    </form>
+
+
     @endsection
-    
+
 
 </body>
 

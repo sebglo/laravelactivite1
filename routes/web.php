@@ -22,6 +22,8 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/articles', 'PostController@articles');
 Route::get('/articles/{post_title}', 'PostController@show');
+Route::post('/articles/{post_title}', 'PostController@store');
+//Route::post('/', 'PostController@store');
 
 Route::get('/contact', 'ContactController@contact');
 Route::post('/contact','ContactController@store');

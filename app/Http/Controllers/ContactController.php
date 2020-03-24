@@ -9,7 +9,8 @@ use App\Http\Requests\Request;
 class ContactController extends Controller
 {
     //
-    /*function contact()
+    
+    /*public function store(Request $request)
     {
         return view('contact');
     }*/
