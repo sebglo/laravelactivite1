@@ -10,9 +10,9 @@ class UsersTableSeeder extends Seeder
      * @return void
      */
     public function run()
-    {
-       // factory(App\User::class, 10)->create()->each(function ($user) {
-            //$user->posts()->save(factory(App\Post::class)->make());
-       // });
+    { //penser a masquer pour la suite 
+       factory(App\User::class, 10)->create()->each(function ($user) {
+            $user->posts()->save(factory(App\Post::class)->make());
+        });
     }
 }

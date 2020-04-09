@@ -16,17 +16,20 @@ use Illuminate\Support\Facades\Route;
 /*Route::get('/', function () {
     return view('welcome');
 });*/
-
+//route sur acces page welcome
 Route::get('/', 'HomeController@index');
 Route::get('/home', 'HomeController@index');
 
+//routes concernant les articles
 Route::get('/articles', 'PostController@articles');
-Route::get('/articles/{post_title}', 'PostController@show');
-Route::post('/articles/{post_title}', 'PostController@store');
-//Route::post('/', 'PostController@store');
+Route::get('/articles/{post_title}', 'PostController@voir');
+Route::post('/articles/{post_title}', 'PostController@commentaire');//store
 
+//routes concernant contact et son formulaire
 Route::get('/contact', 'ContactController@contact');
 Route::post('/contact','ContactController@store');
 
-
+//route concernant les modifications d'articles avec CRUD
+Route::get('/posts/index', 'PostController@modif');
+Route::resource('posts','PostController');
 

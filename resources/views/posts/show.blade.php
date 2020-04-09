@@ -69,21 +69,38 @@
 <body>
     @extends('layouts/main')
     @section('header')
-    <h1>articles</h1>
-    <ul>
-    <h2><a href="/posts/index">Modification des articles</a></h2>
-    </ul>
-    <ul>
-            @foreach ( $posts as $post )
-            <h3><a href="articles/{{ $post->post_title }}">{{ $post->post_title }}</a></h3>
-            <li>{{ $post->post_content }}</li>
-            <li>{{ $post->post_date }}</li>
-            @endforeach
-    </ul>
+    <h1>Espace voir un article</h1>
+    <div class="row">
+    <div class="col-lg-12 margin-tb">
+        
+        <div class="pull-right">
+                <a class="btn btn-primary" href="{{ route('posts.index') }}"> Retour </a>
+            </div>
+        </div>
+    </div>
    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Nom:</strong>
+                {{ $post->post_name }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Titre:</strong>
+                {{ $post->post_title }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Article:</strong>
+                {{ $post->post_content }}
+            </div>
+        </div>
+    </div>
     
     @endsection
-    
 
 </body>
 

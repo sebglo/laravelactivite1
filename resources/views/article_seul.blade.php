@@ -78,10 +78,13 @@
 
     </ul>
     <ul>
-            @foreach ( $comms as $comm )
+    <h2><a href="/posts/index">Modification des articles</a></h2>
+    </ul>
+    <ul>
+    @foreach ( $comms as $comm )
             <h3>{{ $comm->com_name }}</a></h3>
             <li>{{ $comm->com_message }}</li>
-            @endforeach
+    @endforeach
     </ul>
     <form method="POST" action="/articles/{{ $post->post_title }}">
         @csrf

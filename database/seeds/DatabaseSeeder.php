@@ -21,23 +21,23 @@ class DatabaseSeeder extends Seeder
         $this->call(ContactsTableSeeder::class);
 
 
-    //    DB::table('users')->insert([
-    //         'name' => Str::random(10),
-    //         'email' => Str::random(10).'@gmail.com',
-    //         'password' => Hash::make('password'),
-    //     ]);
+        DB::table('users')->insert([
+             'name' => Str::random(10),
+             'email' => Str::random(10).'@gmail.com',
+             'password' => Hash::make('password'),
+         ]);
 
-    //     DB::table('posts')->insert([
-    //         'user_id' => 1,
-    //         'post_content' => Str::random(10),
-    //         'post_title' => Str::random(10),
-    //         'post_status'=> Str::random(10),
-    //         'post_name'=> Str::random(10),
-    //         'post_type'=> Str::random(10),
-    //         'post_category'=> Str::random(10),
-    //         'post_date'=> '2020-03-13 12:00', 
+         DB::table('posts')->insert([
+             'post_id' => 1,
+             'post_content' => Str::random(10),
+             'post_title' => Str::random(10),
+             'post_status'=> Str::random(10),
+             'post_name'=> Str::random(10),
+             'post_type'=> Str::random(10),
+             'post_category'=> Str::random(10),
+             'post_date'=> '2020-03-13 12:00', 
             
-    //     ]);
+         ]);
     }
 }
 
